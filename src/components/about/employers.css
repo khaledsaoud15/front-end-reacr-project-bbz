@@ -1,0 +1,88 @@
+.conatiner {
+  margin: 30px 0;
+}
+
+.meet {
+  text-align: center;
+  font-weight: 400;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.meet::first-letter {
+  font-size: 3rem;
+  background: #cb2d3e;
+  background: -webkit-linear-gradient(to left, #ef473a, #cb2d3e);
+  background: linear-gradient(to left, #ef473a, #cb2d3e);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.meet::after {
+  content: "";
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  height: 2px;
+  background: #000;
+}
+
+.emplo {
+  display: grid;
+  grid-template-columns: repeat(3, 250px);
+  gap: 20px;
+}
+
+.emplo-card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.emplo-card img {
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
+}
+
+.emplo-card h1 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.emplo-card p {
+  color: #999;
+}
+
+.emplo-icons {
+  position: absolute;
+  right: -50px;
+  top: 10px;
+  transition: all 0.3s linear;
+}
+
+.emplo-card:hover .emplo-icons {
+  right: 10px;
+}
+
+.emplo-icon {
+  padding: 5px;
+  background: #cb2d3e;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+  color: #fff;
+  cursor: pointer;
+}
+
+.emplo-icon:hover {
+  transform: scale(0.9);
+}

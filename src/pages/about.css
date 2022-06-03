@@ -1,0 +1,45 @@
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 0 50px;
+  height: 100%;
+}
+
+.latest {
+  margin-right: auto;
+}
+
+.blogs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.latest-header {
+  margin-left: 35px;
+  font-weight: 400;
+  position: relative;
+}
+
+.latest-header::first-letter {
+  font-size: 3rem;
+  background: #cb2d3e;
+  background: -webkit-linear-gradient(to left, #ef473a, #cb2d3e);
+  background: linear-gradient(to left, #ef473a, #cb2d3e);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.latest-header::after {
+  content: "";
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 2px;
+  background: #000;
+}

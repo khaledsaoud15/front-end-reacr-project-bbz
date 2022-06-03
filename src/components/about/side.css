@@ -1,0 +1,73 @@
+.side-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.inputs {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+}
+
+.inputs input {
+  height: 100%;
+  padding: 0 20px;
+  border: none;
+  outline: none;
+}
+
+.inputs button {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0;
+  border: none;
+  background: none;
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+.search-exampls {
+  display: grid;
+  grid-template-columns: repeat(3, 80px);
+  gap: 10px;
+  background: #f1f1f1;
+  padding: 20px;
+}
+
+.search-word {
+  font-size: 12px;
+  text-align: center;
+  background: #fff;
+  border-radius: 100px;
+  font-weight: 400;
+}
+
+.usefull {
+  font-size: 18px;
+  margin: 30px 0;
+  color: #999;
+  font-weight: 400;
+  position: relative;
+  cursor: pointer;
+}
+
+.usefull::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #cb2d3e;
+  position: absolute;
+  bottom: 0%;
+  left: 0;
+  transition: all 0.2s linear;
+}
+
+.usefull:hover::after {
+  width: 30%;
+}

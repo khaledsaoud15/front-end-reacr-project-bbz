@@ -1,0 +1,49 @@
+.blog-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.blog-header {
+  font-weight: 400;
+  position: relative;
+}
+
+.blog-header::first-letter {
+  font-size: 3rem;
+  background: #cb2d3e;
+  background: -webkit-linear-gradient(to left, #ef473a, #cb2d3e);
+  background: linear-gradient(to left, #ef473a, #cb2d3e);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.blog-compo {
+  background: #f1f1f1;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.conatc-us {
+  text-align: center;
+  background: #fff;
+  height: 300px;
+  justify-content: center;
+  padding: 80px;
+}
+
+.conatc-header {
+  font-weight: 400;
+  position: relative;
+}
+
+.conatc-header::first-letter {
+  font-size: 3rem;
+  background: #cb2d3e;
+  background: -webkit-linear-gradient(to left, #ef473a, #cb2d3e);
+  background: linear-gradient(to left, #ef473a, #cb2d3e);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
